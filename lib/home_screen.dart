@@ -1,3 +1,7 @@
+import 'package:adidas/adiclub_screen.dart';
+import 'package:adidas/favorite_screen.dart';
+import 'package:adidas/search_screen.dart';
+import 'package:adidas/shopping_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -14,10 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final Map<int, Map<String, Widget>> _navigetionMap = {
     0: {"title": const Text("Home"), "screen": const HomeScreen()},
-    1: {"title": const Text("Search"), "screen": const HomeScreen()},
-    2: {"title": const Text("Favorite"), "screen": const HomeScreen()},
-    3: {"title": const Text("Cart"), "screen": const HomeScreen()},
-    4: {"title": const Text("Adiclub"), "screen": const HomeScreen()},
+    1: {"title": const Text("Search"), "screen": const SearchScreen()},
+    2: {"title": const Text("Favorite"), "screen": const FavoriteScreen()},
+    3: {"title": const Text("Cart"), "screen": const ShoppingScreen()},
+    4: {"title": const Text("Adiclub"), "screen": const AdiclubScreen()},
   };
 
   void onItemTapped(int index) {
